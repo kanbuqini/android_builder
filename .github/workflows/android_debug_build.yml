@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions 首页操作微调.
 
-name: android_build1444
+name: android_debug_build
 
 on:
   workflow_dispatch:
@@ -29,5 +29,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: my-build-apk
+          name: TVBox-build-debug_apk
           path: ./**/*.apk
